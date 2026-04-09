@@ -71,6 +71,9 @@
         }
         .section {
             margin-bottom: 32px;
+            margin-left: 24px;
+            margin-right: 30px;
+            text-align: justify;
         }
         .section h3 {
             font-size: 1.3rem;
@@ -82,24 +85,51 @@
             color: #111;
             font-size: 1rem;
             margin-bottom: 8px;
+            margin-left: 24px;
+            margin-right: 30px;
         }
-        ul.publications {
+        ul {
             padding-left: 20px;
+            margin-left: 24px;
+            margin-right: 30px; 
         }
-        ul.publications li {
+        li {
             margin-bottom: 12px;
             line-height: 1.6;
         }
         hr {
             border: none;
             border-top: 1.5px solid #ddd;
-            margin: 32px 0;
+            margin: 20px 20px;
         }
         .card-footer {
             text-align: center;
             color: #aaa;
             font-size: 0.95rem;
             margin-top: 40px;
+            margin-left: 24px;
+            margin-right: 30px;
+        }
+        .keywords {
+            margin: 32px;
+            text-align: center;
+            width: 60%;
+            margin: 24px auto;
+        }
+        .keywords .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+        .keywords .tags span {
+            font-size: 0.9rem;
+            padding: 6px 12px;
+            border-radius: 12px;
+            background-color: #f0f0f0;
+            color: #333;
+            transition: all 0.3s ease;
+            cursor: default;
         }
         @media (max-width: 600px) {
             .container {
@@ -112,12 +142,20 @@
         }
     </style>
 </head>
+<script src="https://api.countapi.xyz/hit/github-pages-website/visitor"></script>
+<script>
+    fetch("https://api.countapi.xyz/hit/github-pages-website/visitor")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data.value);
+    });
+</script>
 <body>
     <div class="container">
         <div class="header">
             <img src="/website/static/photo.jpg" alt="Profile Photo">
             <h1>Jessy Chia-Yu Lin</h1>
-            <h2>PhD Candidate, Management of Information Systems<br>National Chengchi University, Taiwan</h2>
+            <h2>PhD Candidate, Management Information Systems<br>National Chengchi University, Taiwan</h2>
             <div class="contact">
                 <a href="mailto:jessylin9822@gmail.com">jessylin9822@gmail.com</a>
                 <div class="icon-row">
@@ -133,26 +171,41 @@
                         <img src="https://cdn.simpleicons.org/googlescholar" alt="Google Scholar">
                     </a>
                 </div>
-
-
             </div>
         </div>
+        <div class="keywords">
+            <div class="tags">
+                <span>Digital Inclusion</span>
+                <span>Digital Autonomy</span>
+                <span>Digital for Development</span>
+                <span>Action De sign Research</span>
+                <span>Qualitative Research</span>
+                <span>Hacker</span>
+            </div>
+        </div> 
         <br>
         <div class="section">
+            <h3>About Me 😊</h3>
             <div class="blog-post-meta">
-                Jessy Chia-Yu Lin (林家瑜) is a doctoral student in the Management of Information Systems at College of Commerce at National Chengchi University (NCCU), Taiwan. 
-                Her research interests center on the social changes and implications of IS/IT, including generative AI, online communities, and social media, with a particular interest in their impact on socially or digitally marginalized communities.
-                She has published in leading information systems conferences such as International Conference of Information Systems (ICIS), European Group of Organizational Studies (EGOS), and UK academic for information systems (UKAIS).
+                Jessy Chia-Yu Lin (林家瑜) is a doctoral student in the Management Information Systems at College of Commerce at National Chengchi University (NCCU), Taiwan. 
+                Her research interests center on digital inclusion, digital for development, digital autonomy, AI implementation, and social media community across diverse social contexts.
+                She has published in Information Systems Frontiers, Social Science and Medicine and serveral leading IS conferences.
             </div>
-            <h3>Recent Works</h3>
+        </div>
+        <div class="section">
+            <h3>Recent Works 🧐</h3>
             <div class="blog-post-meta">
-                Her recent work involves an action design research project that applied generative artificial intelligence tools in rural areas to develop locally meaningful digital solutions. 
+                Her recent work involves an action design research project that collaborates with rural communities to co-create digital solutions using emerging technologies, such as GenAI and no-code platforms, to advance community development.
                 Prior to her doctoral studies, she investigated human behavior in online health communities by applying text mining techniques to multiple social media platforms.
             </div>
         </div>
         <div class="section">
-            <h3>Selected Publications</h3>
+            <h3>Selected Publications 📜</h3>
             <ul class="publications">
+                <li>
+                    <b>Lin, J.C.Y.,</b> Lee, J.Y.H., & Tu, Y. (2026). GenAI and digital inclusion: Application creativity of GenAI in marginalized communities, 
+                    <u>Information Systems Frontiers (preprint)</u>. (A on ABDC Journal List; ABS 3) <a href="https://doi.org/10.1007/s10796-026-10713-7" target="_blank">[paper link]</a>
+                </li>
                 <li>
                     Lee, J.Y.H., Panteli, N., & <b>Lin, J.C.Y.</b> (2025).
                     Managing medical knowledge flow: Physicians' social media actualisation practices.
@@ -175,17 +228,23 @@
                 </li>
             </ul>
         </div>
+        <div class="section">
+            <h3>Visiting Positions 🌏</h3>
+            <ul class="visiting_positions">
+                <li>Visiting Research Student, Business Information Systems, University of Queensland Business School, Australia, April 2026 – April 2027 (funded).</li>
+            </ul>
+        </div>
         <!-- add a service section here -->
         <!-- add a message for graduated students here -->
         <!-- add a teaching section here -->
         <br>
         <div class="blog-post-meta">
-            Updated in July 31, 2025
+            Updated in April 8, 2026
         </div>
         <br><hr>
         <div class="card-footer">
             <a href="#">Back to top</a>
-            <p>© 2025 Jessy Chia-Yu Lin All Rights Reserved</p>
+            <p>© 2026 Jessy Chia-Yu Lin All Rights Reserved</p>
         </div>
     </div>
 </body>
